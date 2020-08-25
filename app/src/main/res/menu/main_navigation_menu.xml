@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/actionTopRated"
+        android:title="@string/top_rated_title" />
+
+    <item
+        android:id="@+id/actionMostOwned"
+        android:title="@string/most_owned_title" />
+
+    <item
+        android:id="@+id/actionDeals"
+        android:title="@string/deals_title" />
+</menu>
