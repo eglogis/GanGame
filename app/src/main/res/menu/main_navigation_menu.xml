@@ -3,13 +3,18 @@
 
     <item
         android:id="@+id/actionTopRated"
+        android:icon="@drawable/ic_top_rated"
         android:title="@string/top_rated_title" />
 
     <item
-        android:id="@+id/actionMostOwned"
-        android:title="@string/most_owned_title" />
+        android:id="@+id/actionDeals"
+        android:icon="@drawable/ic_deals"
+        android:title="@string/deals_title" />
 
     <item
-        android:id="@+id/actionDeals"
-        android:title="@string/deals_title" />
+        android:id="@+id/actionMostOwned"
+        android:icon="@drawable/ic_most_owned"
+        android:title="@string/most_owned_title" />
+
+
 </menu>

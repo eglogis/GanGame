@@ -63,27 +63,31 @@
             app:layout_constraintTop_toBottomOf="@id/nameGame" />
 
         <TextView
-            android:id="@+id/gameSteamRating"
+            android:id="@+id/gameCriticRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:textColor="@color/blueGray"
             android:textSize="@dimen/_11ssp"
             android:textStyle="bold"
+            android:drawablePadding="@dimen/_2sdp"
+            app:drawableLeftCompat="@drawable/ic_metacritic_rating"
             app:layout_constraintLeft_toLeftOf="@id/ratingText"
             app:layout_constraintTop_toBottomOf="@id/ratingText"
             tools:text="25" />
 
         <TextView
-            android:id="@+id/gameOwners"
+            android:id="@+id/gameSteamRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_6sdp"
             android:layout_marginLeft="@dimen/_6sdp"
             android:textColor="@color/blueGray"
             android:textStyle="bold"
-            app:layout_constraintLeft_toRightOf="@id/gameSteamRating"
-            app:layout_constraintTop_toTopOf="@id/gameSteamRating"
+            android:drawablePadding="@dimen/_2sdp"
+            app:drawableLeftCompat="@drawable/ic_steam_rating"
+            app:layout_constraintLeft_toRightOf="@id/gameCriticRating"
+            app:layout_constraintTop_toTopOf="@id/gameCriticRating"
             tools:text="50" />
 
         <androidx.constraintlayout.widget.Guideline

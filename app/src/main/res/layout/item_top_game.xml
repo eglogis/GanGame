@@ -69,9 +69,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
+            android:drawablePadding="@dimen/_2sdp"
             android:textColor="@color/blueGray"
             android:textSize="@dimen/_11ssp"
             android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_steam_rating"
             app:layout_constraintLeft_toLeftOf="@id/nameGame"
             app:layout_constraintTop_toBottomOf="@id/companyName"
             tools:text="25" />
@@ -82,8 +84,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_6sdp"
             android:layout_marginLeft="@dimen/_6sdp"
+            android:drawablePadding="@dimen/_2sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:textColor="@color/blueGray"
             android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_owners"
             app:layout_constraintBaseline_toBaselineOf="@id/gameSteamRating"
             app:layout_constraintLeft_toRightOf="@id/gameSteamRating"
             app:layout_constraintTop_toTopOf="@id/gameSteamRating"
@@ -115,6 +121,7 @@
             tools:text="0.00€" />
 
         <TextView
+            android:id="@+id/gamePosition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_8sdp"
