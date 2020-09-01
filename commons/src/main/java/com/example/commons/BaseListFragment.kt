@@ -8,8 +8,7 @@ import kotlinx.android.synthetic.main.fragment_base_list.*
 
 abstract class BaseListFragment : BaseFragment() {
 
-    private val listAdapter: RecyclerView.Adapter<*>
-        get() = getAdapter()
+    lateinit var listAdapter: RecyclerView.Adapter<*>
 
     override fun getLayoutId(): Int {
         return R.layout.fragment_base_list
@@ -21,8 +20,9 @@ abstract class BaseListFragment : BaseFragment() {
     }
 
     private fun setUpList() {
-        gameList.adapter = listAdapter
-        gameList.layoutManager = LinearLayoutManager(context)
+        listAdapter = getAdapter()
+        list.adapter = listAdapter
+        list.layoutManager = LinearLayoutManager(context)
     }
 
     abstract fun getAdapter(): RecyclerView.Adapter<*>

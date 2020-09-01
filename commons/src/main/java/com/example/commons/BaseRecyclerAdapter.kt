@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 class BaseRecyclerAdapter<MODEL>(private val itemVariableId: Int, private val layoutId: Int) :
     RecyclerView.Adapter<BaseViewHolder<MODEL>>() {
 
-    private val items = mutableListOf<MODEL>()
+    val items = mutableListOf<MODEL>()
 
     override fun getItemCount(): Int {
         return items.size

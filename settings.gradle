@@ -1,3 +1,4 @@
+include ':gangameSdk'
 include ':commons'
 include ':app'
 rootProject.name = "GanGame"

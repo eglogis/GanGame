@@ -1,5 +1,12 @@
 package com.example.gangame.data
 
+object PriceFormatted {
+
+    private const val FORMAT_PRICE = "%.2f €"
+
+    fun formatTwoDecimal(price: Float) = String.format(FORMAT_PRICE, price)
+}
+
 data class Deal(
     var title: String,
     var salePrice: Float,
@@ -7,7 +14,14 @@ data class Deal(
     var criticScore: Int,
     var steamRating: Int,
     var image: String
-)
+) {
+
+    val salePriceFormatted: String
+        get() = PriceFormatted.formatTwoDecimal(salePrice)
+
+    val normalPriceFormatted: String
+        get() = PriceFormatted.formatTwoDecimal(normalPrice)
+}
 
 data class TopGame(
     var title: String,
@@ -17,4 +31,7 @@ data class TopGame(
     var price: Float,
     var position: Int,
     var image: String
-)
+) {
+    val priceFormatted: String
+        get() = PriceFormatted.formatTwoDecimal(price)
+}
